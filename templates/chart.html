@@ -1,0 +1,51 @@
+<html>
+  <head>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['NORMAL',     50],
+         
+          ['PHISING',    20],
+		  ['U2R',    15],
+		  ['R2L',    10],
+		  ['PROBE',    5]
+        ]);
+
+        var options = {
+          title: '',
+          is3D: true,
+        }
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart.draw(data, options);
+      }
+	  
+    </script>
+   <style>
+    body {
+      background-image:url('https://thumbs.dreamstime.com/z/futuristic-raise-arrow-chart-digital-transformation-abstract-technology-background-stock-market-investment-economy-background-139993271.jpg');
+      background-repeat: no-repeat;
+    }
+
+    div {
+
+      background-color: brown;"
+
+
+    }
+
+    </style>
+  </head>
+  <body>
+    
+  <center>  <h1></h1></center>
+   
+    <div id="piechart_3d" style="width: 100%; height: 300px;background-color: brown;"></div>
+	<center><a href="{{url_for('performance')}}"><button type="submit" style="background-color:green;color:rgb(243, 244, 244);width:150px;height:40px;">Future</button></a></center>
+  </body>
+</html>

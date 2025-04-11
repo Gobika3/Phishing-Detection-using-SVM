@@ -1,0 +1,6 @@
+phishingvenv
+.ipynb_checkpoints/
+kdd_train.csv
+test data
+uploads.csv
+.env
